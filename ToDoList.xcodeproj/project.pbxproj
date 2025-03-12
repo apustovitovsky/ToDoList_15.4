@@ -9,14 +9,70 @@
 /* Begin PBXBuildFile section */
 		8A8337FD2D81B93600DD3EBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8337FC2D81B93600DD3EBF /* AppDelegate.swift */; };
 		8A8337FF2D81B93600DD3EBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8337FE2D81B93600DD3EBF /* SceneDelegate.swift */; };
-		8A8338012D81B93600DD3EBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338002D81B93600DD3EBF /* ViewController.swift */; };
-		8A8338042D81B93600DD3EBF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8A8338032D81B93600DD3EBF /* Base */; };
-		8A8338072D81B93600DD3EBF /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338052D81B93600DD3EBF /* ToDoList.xcdatamodeld */; };
 		8A8338092D81B93800DD3EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A8338082D81B93800DD3EBF /* Assets.xcassets */; };
 		8A83380C2D81B93800DD3EBF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8A83380B2D81B93800DD3EBF /* Base */; };
 		8A8338172D81B93800DD3EBF /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338162D81B93800DD3EBF /* ToDoListTests.swift */; };
 		8A8338212D81B93800DD3EBF /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338202D81B93800DD3EBF /* ToDoListUITests.swift */; };
 		8A8338232D81B93800DD3EBF /* ToDoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338222D81B93800DD3EBF /* ToDoListUITestsLaunchTests.swift */; };
+		8A8338322D81BD3F00DD3EBF /* LaunchOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338312D81BD3F00DD3EBF /* LaunchOptions.swift */; };
+		8A8338342D81BD7900DD3EBF /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338332D81BD7900DD3EBF /* AppNavigationController.swift */; };
+		8A8338362D81BD8A00DD3EBF /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338352D81BD8A00DD3EBF /* ApplicationCoordinator.swift */; };
+		8A8338392D81BE2800DD3EBF /* ThemeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338372D81BE2800DD3EBF /* ThemeProvider.swift */; };
+		8A83387F2D81BE3D00DD3EBF /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83383A2D81BE3C00DD3EBF /* Date+Extension.swift */; };
+		8A8338802D81BE3D00DD3EBF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83383B2D81BE3C00DD3EBF /* UIColor+Extension.swift */; };
+		8A8338812D81BE3D00DD3EBF /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83383D2D81BE3C00DD3EBF /* Colors.swift */; };
+		8A8338822D81BE3D00DD3EBF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83383E2D81BE3C00DD3EBF /* Constants.swift */; };
+		8A8338832D81BE3D00DD3EBF /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83383F2D81BE3C00DD3EBF /* Images.swift */; };
+		8A8338842D81BE3D00DD3EBF /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338402D81BE3C00DD3EBF /* Resources.swift */; };
+		8A8338852D81BE3D00DD3EBF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338412D81BE3C00DD3EBF /* Strings.swift */; };
+		8A8338862D81BE3D00DD3EBF /* Action+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338432D81BE3C00DD3EBF /* Action+Handler.swift */; };
+		8A8338872D81BE3D00DD3EBF /* ContentGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338442D81BE3C00DD3EBF /* ContentGenerator.swift */; };
+		8A8338882D81BE3D00DD3EBF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338462D81BE3C00DD3EBF /* SettingsView.swift */; };
+		8A8338892D81BE3D00DD3EBF /* SettingsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338482D81BE3C00DD3EBF /* SettingsFactory.swift */; };
+		8A83388A2D81BE3D00DD3EBF /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338492D81BE3C00DD3EBF /* SettingsInteractor.swift */; };
+		8A83388B2D81BE3D00DD3EBF /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83384A2D81BE3C00DD3EBF /* SettingsModel.swift */; };
+		8A83388C2D81BE3D00DD3EBF /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83384B2D81BE3C00DD3EBF /* SettingsPresenter.swift */; };
+		8A83388D2D81BE3D00DD3EBF /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83384C2D81BE3C00DD3EBF /* SettingsRouter.swift */; };
+		8A83388E2D81BE3D00DD3EBF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83384D2D81BE3C00DD3EBF /* SettingsViewController.swift */; };
+		8A83388F2D81BE3D00DD3EBF /* TaskBrowserFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83384F2D81BE3C00DD3EBF /* TaskBrowserFooter.swift */; };
+		8A8338902D81BE3D00DD3EBF /* TaskBrowserPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338502D81BE3C00DD3EBF /* TaskBrowserPreviewView.swift */; };
+		8A8338912D81BE3D00DD3EBF /* TaskBrowserSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338512D81BE3C00DD3EBF /* TaskBrowserSearchBar.swift */; };
+		8A8338922D81BE3D00DD3EBF /* TaskBrowserTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338522D81BE3C00DD3EBF /* TaskBrowserTableView.swift */; };
+		8A8338932D81BE3D00DD3EBF /* TaskBrowserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338532D81BE3C00DD3EBF /* TaskBrowserTableViewCell.swift */; };
+		8A8338942D81BE3D00DD3EBF /* TaskBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338542D81BE3C00DD3EBF /* TaskBrowserView.swift */; };
+		8A8338952D81BE3D00DD3EBF /* TaskBrowserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338562D81BE3C00DD3EBF /* TaskBrowserFactory.swift */; };
+		8A8338962D81BE3D00DD3EBF /* TaskBrowserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338572D81BE3C00DD3EBF /* TaskBrowserInteractor.swift */; };
+		8A8338972D81BE3D00DD3EBF /* TaskBrowserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338582D81BE3C00DD3EBF /* TaskBrowserModel.swift */; };
+		8A8338982D81BE3D00DD3EBF /* TaskBrowserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338592D81BE3C00DD3EBF /* TaskBrowserPresenter.swift */; };
+		8A8338992D81BE3D00DD3EBF /* TaskBrowserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83385A2D81BE3C00DD3EBF /* TaskBrowserRouter.swift */; };
+		8A83389A2D81BE3D00DD3EBF /* TaskBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83385B2D81BE3C00DD3EBF /* TaskBrowserViewController.swift */; };
+		8A83389B2D81BE3D00DD3EBF /* TaskDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83385D2D81BE3C00DD3EBF /* TaskDetailsView.swift */; };
+		8A83389C2D81BE3D00DD3EBF /* TaskDetailsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83385F2D81BE3C00DD3EBF /* TaskDetailsFactory.swift */; };
+		8A83389D2D81BE3D00DD3EBF /* TaskDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338602D81BE3C00DD3EBF /* TaskDetailsInteractor.swift */; };
+		8A83389E2D81BE3D00DD3EBF /* TaskDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338612D81BE3C00DD3EBF /* TaskDetailsModel.swift */; };
+		8A83389F2D81BE3D00DD3EBF /* TaskDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338622D81BE3C00DD3EBF /* TaskDetailsPresenter.swift */; };
+		8A8338A02D81BE3D00DD3EBF /* TaskDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338632D81BE3C00DD3EBF /* TaskDetailsRouter.swift */; };
+		8A8338A12D81BE3D00DD3EBF /* TaskDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338642D81BE3C00DD3EBF /* TaskDetailsViewController.swift */; };
+		8A8338A22D81BE3D00DD3EBF /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338672D81BE3C00DD3EBF /* CoreDataService.swift */; };
+		8A8338A32D81BE3D00DD3EBF /* TaskStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338682D81BE3C00DD3EBF /* TaskStorageService.swift */; };
+		8A8338A62D81BE3D00DD3EBF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83386D2D81BE3C00DD3EBF /* HTTPMethod.swift */; };
+		8A8338A72D81BE3D00DD3EBF /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83386E2D81BE3C00DD3EBF /* NetworkRequest.swift */; };
+		8A8338A82D81BE3D00DD3EBF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83386F2D81BE3C00DD3EBF /* NetworkService.swift */; };
+		8A8338A92D81BE3D00DD3EBF /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338712D81BE3C00DD3EBF /* ModuleFactory.swift */; };
+		8A8338AA2D81BE3D00DD3EBF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338722D81BE3C00DD3EBF /* Router.swift */; };
+		8A8338AB2D81BE3D00DD3EBF /* RoutingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338732D81BE3C00DD3EBF /* RoutingStep.swift */; };
+		8A8338AC2D81BE3D00DD3EBF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338752D81BE3C00DD3EBF /* Coordinator.swift */; };
+		8A8338AD2D81BE3D00DD3EBF /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338762D81BE3C00DD3EBF /* Presentable.swift */; };
+		8A8338AE2D81BE3D00DD3EBF /* TaskNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338782D81BE3C00DD3EBF /* TaskNetworkService.swift */; };
+		8A8338AF2D81BE3D00DD3EBF /* TaskNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83387A2D81BE3C00DD3EBF /* TaskNetworkRequest.swift */; };
+		8A8338B02D81BE3D00DD3EBF /* TaskNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83387B2D81BE3C00DD3EBF /* TaskNetworkResponse.swift */; };
+		8A8338B12D81BE3D00DD3EBF /* DefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83387D2D81BE3C00DD3EBF /* DefaultRouter.swift */; };
+		8A8338B52D81BE5C00DD3EBF /* TaskDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338B22D81BE5C00DD3EBF /* TaskDetailsTests.swift */; };
+		8A8338B62D81BE5C00DD3EBF /* ServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338B32D81BE5C00DD3EBF /* ServicesTests.swift */; };
+		8A8338B72D81BE5C00DD3EBF /* TaskBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338B42D81BE5C00DD3EBF /* TaskBrowserTests.swift */; };
+		8AD052952D81C25000F646BA /* TaskEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD052932D81C25000F646BA /* TaskEntity+CoreDataClass.swift */; };
+		8AD052962D81C25000F646BA /* TaskEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD052942D81C25000F646BA /* TaskEntity+CoreDataProperties.swift */; };
+		8AD052992D81C36700F646BA /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AD052972D81C36700F646BA /* ToDoList.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +96,6 @@
 		8A8337F92D81B93600DD3EBF /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8337FC2D81B93600DD3EBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A8337FE2D81B93600DD3EBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8A8338002D81B93600DD3EBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8A8338032D81B93600DD3EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8A8338062D81B93600DD3EBF /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 		8A8338082D81B93800DD3EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A83380B2D81B93800DD3EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A83380D2D81B93800DD3EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +104,65 @@
 		8A83381C2D81B93800DD3EBF /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8338202D81B93800DD3EBF /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		8A8338222D81B93800DD3EBF /* ToDoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8A8338312D81BD3F00DD3EBF /* LaunchOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchOptions.swift; sourceTree = "<group>"; };
+		8A8338332D81BD7900DD3EBF /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		8A8338352D81BD8A00DD3EBF /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		8A8338372D81BE2800DD3EBF /* ThemeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeProvider.swift; sourceTree = "<group>"; };
+		8A83383A2D81BE3C00DD3EBF /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		8A83383B2D81BE3C00DD3EBF /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		8A83383D2D81BE3C00DD3EBF /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8A83383E2D81BE3C00DD3EBF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8A83383F2D81BE3C00DD3EBF /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		8A8338402D81BE3C00DD3EBF /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		8A8338412D81BE3C00DD3EBF /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		8A8338432D81BE3C00DD3EBF /* Action+Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Action+Handler.swift"; sourceTree = "<group>"; };
+		8A8338442D81BE3C00DD3EBF /* ContentGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentGenerator.swift; sourceTree = "<group>"; };
+		8A8338462D81BE3C00DD3EBF /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8A8338482D81BE3C00DD3EBF /* SettingsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsFactory.swift; sourceTree = "<group>"; };
+		8A8338492D81BE3C00DD3EBF /* SettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		8A83384A2D81BE3C00DD3EBF /* SettingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		8A83384B2D81BE3C00DD3EBF /* SettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		8A83384C2D81BE3C00DD3EBF /* SettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		8A83384D2D81BE3C00DD3EBF /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8A83384F2D81BE3C00DD3EBF /* TaskBrowserFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBrowserFooter.swift; sourceTree = "<group>"; };
+		8A8338502D81BE3C00DD3EBF /* TaskBrowserPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBrowserPreviewView.swift; sourceTree = "<group>"; };
+		8A8338512D81BE3C00DD3EBF /* TaskBrowserSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBrowserSearchBar.swift; sourceTree = "<group>"; };
+		8A8338522D81BE3C00DD3EBF /* TaskBrowserTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBrowserTableView.swift; sourceTree = "<group>"; };
+		8A8338532D81BE3C00DD3EBF /* TaskBrowserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBrowserTableViewCell.swift; sourceTree = "<group>"; };
+		8A8338542D81BE3C00DD3EBF /* TaskBrowserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBrowserView.swift; sourceTree = "<group>"; };
+		8A8338562D81BE3C00DD3EBF /* TaskBrowserFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBrowserFactory.swift; sourceTree = "<group>"; };
+		8A8338572D81BE3C00DD3EBF /* TaskBrowserInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBrowserInteractor.swift; sourceTree = "<group>"; };
+		8A8338582D81BE3C00DD3EBF /* TaskBrowserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBrowserModel.swift; sourceTree = "<group>"; };
+		8A8338592D81BE3C00DD3EBF /* TaskBrowserPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBrowserPresenter.swift; sourceTree = "<group>"; };
+		8A83385A2D81BE3C00DD3EBF /* TaskBrowserRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBrowserRouter.swift; sourceTree = "<group>"; };
+		8A83385B2D81BE3C00DD3EBF /* TaskBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBrowserViewController.swift; sourceTree = "<group>"; };
+		8A83385D2D81BE3C00DD3EBF /* TaskDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailsView.swift; sourceTree = "<group>"; };
+		8A83385F2D81BE3C00DD3EBF /* TaskDetailsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailsFactory.swift; sourceTree = "<group>"; };
+		8A8338602D81BE3C00DD3EBF /* TaskDetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailsInteractor.swift; sourceTree = "<group>"; };
+		8A8338612D81BE3C00DD3EBF /* TaskDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailsModel.swift; sourceTree = "<group>"; };
+		8A8338622D81BE3C00DD3EBF /* TaskDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailsPresenter.swift; sourceTree = "<group>"; };
+		8A8338632D81BE3C00DD3EBF /* TaskDetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailsRouter.swift; sourceTree = "<group>"; };
+		8A8338642D81BE3C00DD3EBF /* TaskDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailsViewController.swift; sourceTree = "<group>"; };
+		8A8338672D81BE3C00DD3EBF /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		8A8338682D81BE3C00DD3EBF /* TaskStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskStorageService.swift; sourceTree = "<group>"; };
+		8A83386D2D81BE3C00DD3EBF /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		8A83386E2D81BE3C00DD3EBF /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		8A83386F2D81BE3C00DD3EBF /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		8A8338712D81BE3C00DD3EBF /* ModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
+		8A8338722D81BE3C00DD3EBF /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8A8338732D81BE3C00DD3EBF /* RoutingStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingStep.swift; sourceTree = "<group>"; };
+		8A8338752D81BE3C00DD3EBF /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8A8338762D81BE3C00DD3EBF /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		8A8338782D81BE3C00DD3EBF /* TaskNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskNetworkService.swift; sourceTree = "<group>"; };
+		8A83387A2D81BE3C00DD3EBF /* TaskNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskNetworkRequest.swift; sourceTree = "<group>"; };
+		8A83387B2D81BE3C00DD3EBF /* TaskNetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskNetworkResponse.swift; sourceTree = "<group>"; };
+		8A83387D2D81BE3C00DD3EBF /* DefaultRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultRouter.swift; sourceTree = "<group>"; };
+		8A8338B22D81BE5C00DD3EBF /* TaskDetailsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailsTests.swift; sourceTree = "<group>"; };
+		8A8338B32D81BE5C00DD3EBF /* ServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTests.swift; sourceTree = "<group>"; };
+		8A8338B42D81BE5C00DD3EBF /* TaskBrowserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBrowserTests.swift; sourceTree = "<group>"; };
+		8AD052932D81C25000F646BA /* TaskEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8AD052942D81C25000F646BA /* TaskEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8AD052982D81C36700F646BA /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +213,16 @@
 		8A8337FB2D81B93600DD3EBF /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				8A8337FC2D81B93600DD3EBF /* AppDelegate.swift */,
-				8A8337FE2D81B93600DD3EBF /* SceneDelegate.swift */,
-				8A8338002D81B93600DD3EBF /* ViewController.swift */,
-				8A8338022D81B93600DD3EBF /* Main.storyboard */,
-				8A8338082D81B93800DD3EBF /* Assets.xcassets */,
-				8A83380A2D81B93800DD3EBF /* LaunchScreen.storyboard */,
-				8A83380D2D81B93800DD3EBF /* Info.plist */,
-				8A8338052D81B93600DD3EBF /* ToDoList.xcdatamodeld */,
+				8AD052972D81C36700F646BA /* ToDoList.xcdatamodeld */,
+				8A8338452D81BE3C00DD3EBF /* Helpers */,
+				8A8338662D81BE3C00DD3EBF /* Modules */,
+				8A83387C2D81BE3C00DD3EBF /* Networking */,
+				8A83386C2D81BE3C00DD3EBF /* Persistent */,
+				8A8338772D81BE3C00DD3EBF /* Protocols */,
+				8A83387E2D81BE3C00DD3EBF /* Routing */,
+				8A8338382D81BE2800DD3EBF /* Theming */,
+				8A8338302D81B9D000DD3EBF /* SupportingFiles */,
+				8A83382F2D81B9A200DD3EBF /* Application */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -116,6 +230,9 @@
 		8A8338152D81B93800DD3EBF /* ToDoListTests */ = {
 			isa = PBXGroup;
 			children = (
+				8A8338B32D81BE5C00DD3EBF /* ServicesTests.swift */,
+				8A8338B42D81BE5C00DD3EBF /* TaskBrowserTests.swift */,
+				8A8338B22D81BE5C00DD3EBF /* TaskDetailsTests.swift */,
 				8A8338162D81B93800DD3EBF /* ToDoListTests.swift */,
 			);
 			path = ToDoListTests;
@@ -128,6 +245,225 @@
 				8A8338222D81B93800DD3EBF /* ToDoListUITestsLaunchTests.swift */,
 			);
 			path = ToDoListUITests;
+			sourceTree = "<group>";
+		};
+		8A83382F2D81B9A200DD3EBF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8A8338332D81BD7900DD3EBF /* AppNavigationController.swift */,
+				8A8338352D81BD8A00DD3EBF /* ApplicationCoordinator.swift */,
+				8A8337FC2D81B93600DD3EBF /* AppDelegate.swift */,
+				8A8337FE2D81B93600DD3EBF /* SceneDelegate.swift */,
+				8A8338312D81BD3F00DD3EBF /* LaunchOptions.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8A8338302D81B9D000DD3EBF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8A83380D2D81B93800DD3EBF /* Info.plist */,
+				8A83380A2D81B93800DD3EBF /* LaunchScreen.storyboard */,
+				8A8338082D81B93800DD3EBF /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		8A8338382D81BE2800DD3EBF /* Theming */ = {
+			isa = PBXGroup;
+			children = (
+				8A8338372D81BE2800DD3EBF /* ThemeProvider.swift */,
+			);
+			path = Theming;
+			sourceTree = "<group>";
+		};
+		8A83383C2D81BE3C00DD3EBF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A83383A2D81BE3C00DD3EBF /* Date+Extension.swift */,
+				8A83383B2D81BE3C00DD3EBF /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8A8338422D81BE3C00DD3EBF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A83383D2D81BE3C00DD3EBF /* Colors.swift */,
+				8A83383E2D81BE3C00DD3EBF /* Constants.swift */,
+				8A83383F2D81BE3C00DD3EBF /* Images.swift */,
+				8A8338402D81BE3C00DD3EBF /* Resources.swift */,
+				8A8338412D81BE3C00DD3EBF /* Strings.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A8338452D81BE3C00DD3EBF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8A83383C2D81BE3C00DD3EBF /* Extensions */,
+				8A8338422D81BE3C00DD3EBF /* Resources */,
+				8A8338432D81BE3C00DD3EBF /* Action+Handler.swift */,
+				8A8338442D81BE3C00DD3EBF /* ContentGenerator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8A8338472D81BE3C00DD3EBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A8338462D81BE3C00DD3EBF /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A83384E2D81BE3C00DD3EBF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8A8338472D81BE3C00DD3EBF /* Views */,
+				8A8338482D81BE3C00DD3EBF /* SettingsFactory.swift */,
+				8A8338492D81BE3C00DD3EBF /* SettingsInteractor.swift */,
+				8A83384A2D81BE3C00DD3EBF /* SettingsModel.swift */,
+				8A83384B2D81BE3C00DD3EBF /* SettingsPresenter.swift */,
+				8A83384C2D81BE3C00DD3EBF /* SettingsRouter.swift */,
+				8A83384D2D81BE3C00DD3EBF /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8A8338552D81BE3C00DD3EBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A83384F2D81BE3C00DD3EBF /* TaskBrowserFooter.swift */,
+				8A8338502D81BE3C00DD3EBF /* TaskBrowserPreviewView.swift */,
+				8A8338512D81BE3C00DD3EBF /* TaskBrowserSearchBar.swift */,
+				8A8338522D81BE3C00DD3EBF /* TaskBrowserTableView.swift */,
+				8A8338532D81BE3C00DD3EBF /* TaskBrowserTableViewCell.swift */,
+				8A8338542D81BE3C00DD3EBF /* TaskBrowserView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A83385C2D81BE3C00DD3EBF /* TaskBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				8A8338552D81BE3C00DD3EBF /* Views */,
+				8A8338562D81BE3C00DD3EBF /* TaskBrowserFactory.swift */,
+				8A8338572D81BE3C00DD3EBF /* TaskBrowserInteractor.swift */,
+				8A8338582D81BE3C00DD3EBF /* TaskBrowserModel.swift */,
+				8A8338592D81BE3C00DD3EBF /* TaskBrowserPresenter.swift */,
+				8A83385A2D81BE3C00DD3EBF /* TaskBrowserRouter.swift */,
+				8A83385B2D81BE3C00DD3EBF /* TaskBrowserViewController.swift */,
+			);
+			path = TaskBrowser;
+			sourceTree = "<group>";
+		};
+		8A83385E2D81BE3C00DD3EBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A83385D2D81BE3C00DD3EBF /* TaskDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A8338652D81BE3C00DD3EBF /* TaskDetails */ = {
+			isa = PBXGroup;
+			children = (
+				8A83385E2D81BE3C00DD3EBF /* Views */,
+				8A83385F2D81BE3C00DD3EBF /* TaskDetailsFactory.swift */,
+				8A8338602D81BE3C00DD3EBF /* TaskDetailsInteractor.swift */,
+				8A8338612D81BE3C00DD3EBF /* TaskDetailsModel.swift */,
+				8A8338622D81BE3C00DD3EBF /* TaskDetailsPresenter.swift */,
+				8A8338632D81BE3C00DD3EBF /* TaskDetailsRouter.swift */,
+				8A8338642D81BE3C00DD3EBF /* TaskDetailsViewController.swift */,
+			);
+			path = TaskDetails;
+			sourceTree = "<group>";
+		};
+		8A8338662D81BE3C00DD3EBF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8A83384E2D81BE3C00DD3EBF /* Settings */,
+				8A83385C2D81BE3C00DD3EBF /* TaskBrowser */,
+				8A8338652D81BE3C00DD3EBF /* TaskDetails */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8A8338692D81BE3C00DD3EBF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8A8338672D81BE3C00DD3EBF /* CoreDataService.swift */,
+				8A8338682D81BE3C00DD3EBF /* TaskStorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8A83386C2D81BE3C00DD3EBF /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				8AD052932D81C25000F646BA /* TaskEntity+CoreDataClass.swift */,
+				8AD052942D81C25000F646BA /* TaskEntity+CoreDataProperties.swift */,
+				8A8338692D81BE3C00DD3EBF /* Services */,
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
+		8A8338702D81BE3C00DD3EBF /* Networkings */ = {
+			isa = PBXGroup;
+			children = (
+				8A83386D2D81BE3C00DD3EBF /* HTTPMethod.swift */,
+				8A83386E2D81BE3C00DD3EBF /* NetworkRequest.swift */,
+				8A83386F2D81BE3C00DD3EBF /* NetworkService.swift */,
+			);
+			path = Networkings;
+			sourceTree = "<group>";
+		};
+		8A8338742D81BE3C00DD3EBF /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				8A8338712D81BE3C00DD3EBF /* ModuleFactory.swift */,
+				8A8338722D81BE3C00DD3EBF /* Router.swift */,
+				8A8338732D81BE3C00DD3EBF /* RoutingStep.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		8A8338772D81BE3C00DD3EBF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8A8338702D81BE3C00DD3EBF /* Networkings */,
+				8A8338742D81BE3C00DD3EBF /* Routing */,
+				8A8338752D81BE3C00DD3EBF /* Coordinator.swift */,
+				8A8338762D81BE3C00DD3EBF /* Presentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8A8338792D81BE3C00DD3EBF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8A8338782D81BE3C00DD3EBF /* TaskNetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8A83387C2D81BE3C00DD3EBF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8A8338792D81BE3C00DD3EBF /* Services */,
+				8A83387A2D81BE3C00DD3EBF /* TaskNetworkRequest.swift */,
+				8A83387B2D81BE3C00DD3EBF /* TaskNetworkResponse.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8A83387E2D81BE3C00DD3EBF /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				8A83387D2D81BE3C00DD3EBF /* DefaultRouter.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +572,6 @@
 			files = (
 				8A8338092D81B93800DD3EBF /* Assets.xcassets in Resources */,
 				8A83380C2D81B93800DD3EBF /* Base in Resources */,
-				8A8338042D81B93600DD3EBF /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +596,64 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A8338012D81B93600DD3EBF /* ViewController.swift in Sources */,
+				8A8338A32D81BE3D00DD3EBF /* TaskStorageService.swift in Sources */,
+				8A8338962D81BE3D00DD3EBF /* TaskBrowserInteractor.swift in Sources */,
+				8A8338392D81BE2800DD3EBF /* ThemeProvider.swift in Sources */,
+				8AD052962D81C25000F646BA /* TaskEntity+CoreDataProperties.swift in Sources */,
+				8A8338832D81BE3D00DD3EBF /* Images.swift in Sources */,
+				8A8338A62D81BE3D00DD3EBF /* HTTPMethod.swift in Sources */,
+				8A8338A22D81BE3D00DD3EBF /* CoreDataService.swift in Sources */,
+				8A8338822D81BE3D00DD3EBF /* Constants.swift in Sources */,
+				8A8338872D81BE3D00DD3EBF /* ContentGenerator.swift in Sources */,
+				8A8338902D81BE3D00DD3EBF /* TaskBrowserPreviewView.swift in Sources */,
+				8A8338AA2D81BE3D00DD3EBF /* Router.swift in Sources */,
+				8A8338862D81BE3D00DD3EBF /* Action+Handler.swift in Sources */,
+				8A8338882D81BE3D00DD3EBF /* SettingsView.swift in Sources */,
+				8A8338932D81BE3D00DD3EBF /* TaskBrowserTableViewCell.swift in Sources */,
+				8A8338A82D81BE3D00DD3EBF /* NetworkService.swift in Sources */,
+				8A8338AE2D81BE3D00DD3EBF /* TaskNetworkService.swift in Sources */,
+				8A8338812D81BE3D00DD3EBF /* Colors.swift in Sources */,
+				8A8338AF2D81BE3D00DD3EBF /* TaskNetworkRequest.swift in Sources */,
+				8A8338892D81BE3D00DD3EBF /* SettingsFactory.swift in Sources */,
+				8A83388A2D81BE3D00DD3EBF /* SettingsInteractor.swift in Sources */,
 				8A8337FD2D81B93600DD3EBF /* AppDelegate.swift in Sources */,
+				8A8338982D81BE3D00DD3EBF /* TaskBrowserPresenter.swift in Sources */,
+				8A83389D2D81BE3D00DD3EBF /* TaskDetailsInteractor.swift in Sources */,
+				8A8338942D81BE3D00DD3EBF /* TaskBrowserView.swift in Sources */,
+				8A8338322D81BD3F00DD3EBF /* LaunchOptions.swift in Sources */,
+				8A8338852D81BE3D00DD3EBF /* Strings.swift in Sources */,
+				8A8338802D81BE3D00DD3EBF /* UIColor+Extension.swift in Sources */,
+				8A8338A02D81BE3D00DD3EBF /* TaskDetailsRouter.swift in Sources */,
 				8A8337FF2D81B93600DD3EBF /* SceneDelegate.swift in Sources */,
-				8A8338072D81B93600DD3EBF /* ToDoList.xcdatamodeld in Sources */,
+				8A83388E2D81BE3D00DD3EBF /* SettingsViewController.swift in Sources */,
+				8A8338AC2D81BE3D00DD3EBF /* Coordinator.swift in Sources */,
+				8A83388F2D81BE3D00DD3EBF /* TaskBrowserFooter.swift in Sources */,
+				8AD052952D81C25000F646BA /* TaskEntity+CoreDataClass.swift in Sources */,
+				8A83388D2D81BE3D00DD3EBF /* SettingsRouter.swift in Sources */,
+				8A8338922D81BE3D00DD3EBF /* TaskBrowserTableView.swift in Sources */,
+				8A8338992D81BE3D00DD3EBF /* TaskBrowserRouter.swift in Sources */,
+				8A8338B12D81BE3D00DD3EBF /* DefaultRouter.swift in Sources */,
+				8AD052992D81C36700F646BA /* ToDoList.xcdatamodeld in Sources */,
+				8A8338AD2D81BE3D00DD3EBF /* Presentable.swift in Sources */,
+				8A8338952D81BE3D00DD3EBF /* TaskBrowserFactory.swift in Sources */,
+				8A8338A12D81BE3D00DD3EBF /* TaskDetailsViewController.swift in Sources */,
+				8A8338A72D81BE3D00DD3EBF /* NetworkRequest.swift in Sources */,
+				8A8338912D81BE3D00DD3EBF /* TaskBrowserSearchBar.swift in Sources */,
+				8A8338972D81BE3D00DD3EBF /* TaskBrowserModel.swift in Sources */,
+				8A83387F2D81BE3D00DD3EBF /* Date+Extension.swift in Sources */,
+				8A83389F2D81BE3D00DD3EBF /* TaskDetailsPresenter.swift in Sources */,
+				8A83389C2D81BE3D00DD3EBF /* TaskDetailsFactory.swift in Sources */,
+				8A83388B2D81BE3D00DD3EBF /* SettingsModel.swift in Sources */,
+				8A8338A92D81BE3D00DD3EBF /* ModuleFactory.swift in Sources */,
+				8A8338AB2D81BE3D00DD3EBF /* RoutingStep.swift in Sources */,
+				8A8338342D81BD7900DD3EBF /* AppNavigationController.swift in Sources */,
+				8A83389E2D81BE3D00DD3EBF /* TaskDetailsModel.swift in Sources */,
+				8A8338362D81BD8A00DD3EBF /* ApplicationCoordinator.swift in Sources */,
+				8A83389B2D81BE3D00DD3EBF /* TaskDetailsView.swift in Sources */,
+				8A8338842D81BE3D00DD3EBF /* Resources.swift in Sources */,
+				8A83389A2D81BE3D00DD3EBF /* TaskBrowserViewController.swift in Sources */,
+				8A8338B02D81BE3D00DD3EBF /* TaskNetworkResponse.swift in Sources */,
+				8A83388C2D81BE3D00DD3EBF /* SettingsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +662,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A8338172D81B93800DD3EBF /* ToDoListTests.swift in Sources */,
+				8A8338B62D81BE5C00DD3EBF /* ServicesTests.swift in Sources */,
+				8A8338B52D81BE5C00DD3EBF /* TaskDetailsTests.swift in Sources */,
+				8A8338B72D81BE5C00DD3EBF /* TaskBrowserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +693,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8A8338022D81B93600DD3EBF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A8338032D81B93600DD3EBF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8A83380A2D81B93800DD3EBF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,12 +831,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = ToDoList/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,9 +843,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = unknown.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -474,12 +861,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = ToDoList/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,9 +873,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = unknown.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -607,13 +997,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8A8338052D81B93600DD3EBF /* ToDoList.xcdatamodeld */ = {
+		8AD052972D81C36700F646BA /* ToDoList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8A8338062D81B93600DD3EBF /* ToDoList.xcdatamodel */,
+				8AD052982D81C36700F646BA /* ToDoList.xcdatamodel */,
 			);
-			currentVersion = 8A8338062D81B93600DD3EBF /* ToDoList.xcdatamodel */;
-			path = ToDoList.xcdatamodeld;
+			currentVersion = 8AD052982D81C36700F646BA /* ToDoList.xcdatamodel */;
+			name = ToDoList.xcdatamodeld;
+			path = /Users/alexey/Documents/Swift/ToDoList_16/ToDoList/ToDoList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

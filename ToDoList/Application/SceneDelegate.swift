@@ -1,22 +1,54 @@
-//
-//  SceneDelegate.swift
-//  ToDoList
-//
-//  Created by Алексей on 12.03.2025.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    private var coordinator: ApplicationCoordinator?
+    private var themeProvider: ThemeProviderProtocol = ThemeProvider()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = scene as? UIWindowScene else { return }
+        
+        let window = UIWindow(windowScene: windowScene)
+        let navigationController = AppNavigationController()
+        window.rootViewController = navigationController
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(applyTheme),
+            name: ThemeProvider.themeDidChangeNotification,
+            object: nil)
+        
+        coordinator = ApplicationCoordinator(
+            router: DefaultRouter(rootController: navigationController),
+            themeProvider: themeProvider,
+            storageService: TaskStorageService(),
+            networkService: TaskNetworkService()
+        )
+        
+        self.window = window
+        window.makeKeyAndVisible()
+        
+        coordinator?.start()
+        applyTheme()
+    }
+    
+    @objc private func applyTheme() {
+        guard let window = window else { return }
+        UIView.transition(with: window, duration: 0.4, options: .transitionCrossDissolve) { [weak self] in
+            guard let theme = self?.themeProvider.effectiveTheme else { return }
+            window.overrideUserInterfaceStyle = theme == .dark ? .dark : .light
+        }
+    }
+    
+    func windowScene(_ windowScene: UIWindowScene,
+                     didUpdate previousCoordinateSpace: UICoordinateSpace,
+                     interfaceOrientation: UIInterfaceOrientation,
+                     traitCollection: UITraitCollection) {
+        
+        let newTheme: Theme = traitCollection.userInterfaceStyle == .dark ? .dark : .light
+        themeProvider.setupTheme(to: newTheme)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -47,7 +79,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
 
         // Save changes in the application's managed object context when the application transitions to the background.
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+//        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
 
