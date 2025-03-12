@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.makeKeyAndVisible()
         
         coordinator?.start()
-        applyTheme()
+        themeProvider.setupTheme(to: .dark)
     }
     
     @objc private func applyTheme() {
