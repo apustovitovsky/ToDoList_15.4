@@ -72,7 +72,7 @@
 		8A8338B72D81BE5C00DD3EBF /* TaskBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8338B42D81BE5C00DD3EBF /* TaskBrowserTests.swift */; };
 		8AD052952D81C25000F646BA /* TaskEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD052932D81C25000F646BA /* TaskEntity+CoreDataClass.swift */; };
 		8AD052962D81C25000F646BA /* TaskEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD052942D81C25000F646BA /* TaskEntity+CoreDataProperties.swift */; };
-		8AD052992D81C36700F646BA /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AD052972D81C36700F646BA /* ToDoList.xcdatamodeld */; };
+		8AF3974E2D822575005CFAB4 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3974C2D822575005CFAB4 /* ToDoList.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,7 +162,7 @@
 		8A8338B42D81BE5C00DD3EBF /* TaskBrowserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskBrowserTests.swift; sourceTree = "<group>"; };
 		8AD052932D81C25000F646BA /* TaskEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8AD052942D81C25000F646BA /* TaskEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8AD052982D81C36700F646BA /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
+		8AF3974D2D822575005CFAB4 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,7 +213,7 @@
 		8A8337FB2D81B93600DD3EBF /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				8AD052972D81C36700F646BA /* ToDoList.xcdatamodeld */,
+				8AF3974C2D822575005CFAB4 /* ToDoList.xcdatamodeld */,
 				8A8338452D81BE3C00DD3EBF /* Helpers */,
 				8A8338662D81BE3C00DD3EBF /* Modules */,
 				8A83387C2D81BE3C00DD3EBF /* Networking */,
@@ -633,7 +633,7 @@
 				8A8338922D81BE3D00DD3EBF /* TaskBrowserTableView.swift in Sources */,
 				8A8338992D81BE3D00DD3EBF /* TaskBrowserRouter.swift in Sources */,
 				8A8338B12D81BE3D00DD3EBF /* DefaultRouter.swift in Sources */,
-				8AD052992D81C36700F646BA /* ToDoList.xcdatamodeld in Sources */,
+				8AF3974E2D822575005CFAB4 /* ToDoList.xcdatamodeld in Sources */,
 				8A8338AD2D81BE3D00DD3EBF /* Presentable.swift in Sources */,
 				8A8338952D81BE3D00DD3EBF /* TaskBrowserFactory.swift in Sources */,
 				8A8338A12D81BE3D00DD3EBF /* TaskDetailsViewController.swift in Sources */,
@@ -997,14 +997,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8AD052972D81C36700F646BA /* ToDoList.xcdatamodeld */ = {
+		8AF3974C2D822575005CFAB4 /* ToDoList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8AD052982D81C36700F646BA /* ToDoList.xcdatamodel */,
+				8AF3974D2D822575005CFAB4 /* ToDoList.xcdatamodel */,
 			);
-			currentVersion = 8AD052982D81C36700F646BA /* ToDoList.xcdatamodel */;
+			currentVersion = 8AF3974D2D822575005CFAB4 /* ToDoList.xcdatamodel */;
 			name = ToDoList.xcdatamodeld;
-			path = /Users/alexey/Documents/Swift/ToDoList_16/ToDoList/ToDoList.xcdatamodeld;
+			path = /Users/alexey/Documents/Swift/ToDoList_15.4/ToDoList/ToDoList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
