@@ -49,3 +49,5 @@
 ## Используемые источники:
 - [Ссылка на макеты Figma](https://www.figma.com/design/ElcIDP3PIp5iOE4dCtPGmd/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B8?node-id=0-1&node-type=canvas&t=TwPJnfr4PqiaBY1N-11)
 - [JSON API](https://drive.google.com/file/d/1MXypRbK2CS9fqPhTtPonn580h1sHUs2W/view?usp=sharing)
+
+![Image](https://github.com/user-attachments/assets/a5d9a6bb-0399-4593-97db-876e86db7fa1)
