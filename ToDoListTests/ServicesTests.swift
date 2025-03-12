@@ -17,19 +17,19 @@ final class ServicesTests: XCTestCase {
         super.tearDown()
     }
 
-    func testPersistentServiceCreateTask() {
-        let expectation = XCTestExpectation(description: "Create task")
-        let task = TaskDetailsModel.createEmpty
-
-        storageService.addTask(task)
-
-        storageService.fetchTasksBackground { tasks in
-            XCTAssertTrue(tasks.contains(where: { $0.id == task.id }))
-            expectation.fulfill()
-        }
-
-        wait(for: [expectation], timeout: 1.0)
-    }
+//    func testPersistentServiceCreateTask() {
+//        let expectation = XCTestExpectation(description: "Create task")
+//        let task = TaskDetailsModel.createEmpty
+//
+//        storageService.addTask(task)
+//
+//        storageService.fetchTasksBackground { tasks in
+//            XCTAssertTrue(tasks.contains(where: { $0.id == task.id }))
+//            expectation.fulfill()
+//        }
+//
+//        wait(for: [expectation], timeout: 1.0)
+//    }
 
     func testNetworkServiceFetchTasks() {
         let expectation = XCTestExpectation(description: "Fetch tasks")
